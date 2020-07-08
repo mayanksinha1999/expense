@@ -1,0 +1,57 @@
+<ion-header>
+  <ion-navbar>
+
+    <ion-title><i>EXPENSIFY </i><img src="../assets/imgs/new_pic1.jpg" class="header_icon"></ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding class="masters">
+  <img src="../assets/imgs/new_pic1.jpg" class="header_icon2">
+    <!-- <div id="login-box">
+        <h1><i>Login</i><ion-icon name="login-in"></ion-icon></h1>
+    <ion-list>
+      <ion-item color="light">
+        <ion-label floating>Username</ion-label>
+        <ion-input [(ngModel)]="username" type="text" value=""></ion-input>
+        <ion-avatar item-start>
+          <img src="https://cdn4.vectorstock.com/i/1000x1000/23/18/male-avatar-icon-flat-vector-19152318.jpg">
+        </ion-avatar>
+      </ion-item>
+      <br>
+      <br>
+
+      <ion-item color="light">
+        <ion-label floating>Password</ion-label>
+        <ion-input [(ngModel)]="password" type="password" value=""></ion-input>
+        <ion-avatar item-start>
+          <img src="https://fbnewsroomus.files.wordpress.com/2019/03/newsroom-hero-image-password-security.png?w=960">
+        </ion-avatar>
+      </ion-item>
+    </ion-list> -->
+    <div class="new">
+    <ion-list>
+      <ion-item>
+        <ion-label floating>Username</ion-label>
+        <ion-input  type="text" value=""></ion-input>
+        <ion-avatar item-start>
+          <img src="https://cdn4.vectorstock.com/i/1000x1000/23/18/male-avatar-icon-flat-vector-19152318.jpg">
+        </ion-avatar>
+      </ion-item>
+      <br>
+
+      <ion-item>
+        <ion-label floating>Password</ion-label>
+        <ion-input  type="password" value=""></ion-input>
+        <ion-avatar item-start>
+          <img src="https://fbnewsroomus.files.wordpress.com/2019/03/newsroom-hero-image-password-security.png?w=960">
+        </ion-avatar>
+      </ion-item>
+    </ion-list>
+    <!-- <ion-input type="Submit" name="submit-button" value="Login" (click)="login_button()"></ion-input> -->
+    <i><button ion-button full round color="mayank2" value="login" (click)="login_button()">Login</button></i>
+    <br>
+    <i><h2><button ion-button round (click)="signup_page()" class="signup_page">New User? Register</button></h2></i>
+    <p><input type="checkbox" class="remember">Remember Me</p>
+  </div>
+
+</ion-content>

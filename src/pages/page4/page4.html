@@ -1,0 +1,98 @@
+<!--
+  Generated template for the Page4Page page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar>
+    <ion-title *ngIf="b"><i>TODAY'S EXPENSES</i></ion-title>
+      <!-- <ion-title *ngIf="c"><i>EXPENSES REPORTS</i></ion-title> -->
+      <ion-title *ngIf="e"><i>EXPENSES CATEGORIES</i></ion-title>
+      <ion-title *ngIf="g"><i>SETTINGS</i></ion-title>
+    <!-- <ion-buttons end>
+      <button>
+         <ion-icon item name="add-circle"></ion-icon> -->
+        <!-- <ion-buttons end>
+            <button (click)="my_func()" ion-button icon-only>
+              <ion-icon name="add-circle"></ion-icon>
+            </button>
+          </ion-buttons> -->
+      <!-- </button>
+    </ion-buttons> -->
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding class="masters">
+  <div *ngIf="b">
+    <ion-card >
+      <h1> It will calculate the expenses on daily basis.</h1>
+    </ion-card>
+    </div>
+
+     <div *ngIf="c">
+    <ion-card >
+       <div id="chart_div">
+
+       </div>
+
+      </ion-card>
+    </div>
+
+    <!-- <div *ngIf="e">
+      <ion-card >
+
+           <ion-buttons end *ngIf="e">
+                <button (click)="my_func()" ion-button icon-only>
+                  <ion-icon name="add-circle"></ion-icon>
+                </button>
+              </ion-buttons> -->
+          <!-- <p> It will give the expenses categories. -->
+            <!-- <ion-header>
+            <ion-navbar>
+              <ion-title>categories</ion-title>
+              <ion-buttons end>
+                <button >
+            <ion-icon item name="add-circle"></ion-icon>
+          </button>
+          </ion-buttons>
+          </ion-navbar>
+        </ion-header> -->
+              <!-- <ion-item>
+                  <ion-label><i>General</i></ion-label>
+                  <ion-select [(ngModel)]="general">
+                    <ion-option value="">Entertainment</ion-option>
+                    <ion-option value="">Food</ion-option>
+                    <ion-option value="">Travel</ion-option>
+                    <ion-option value="">Clothes</ion-option>
+                    <ion-option value="">Kids</ion-option>
+                  </ion-select>
+                </ion-item> -->
+          <!-- </p> -->
+        <!-- </ion-card>
+    </div> -->
+<!--
+    <ion-card *ngIf="g">
+
+          </ion-card>
+          <ion-card>
+            <ion-card-content *ngFor="let item of items">
+              <h1>{{item.amount}}</h1>
+              {{item.description}}
+
+            </ion-card-content>
+          </ion-card> -->
+          <div *ngIf="g" class="text-color">
+              <h1><i>General</i></h1>
+              <h1><i>Privacy</i></h1>
+              <h1><i>Licence</i></h1>
+              <h1><i>About</i></h1>
+
+
+          </div>
+          <!-- <ion-card>
+              <ion-title><i>LOG OUT</i></ion-title>
+
+            </ion-card> -->
+
+</ion-content>

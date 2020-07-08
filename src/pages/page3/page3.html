@@ -1,0 +1,104 @@
+<!--
+  Generated template for the Page3Page page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons start>
+      <button ion-button icon-only menuToggle>
+        <ion-icon name="menu" color="primary"></ion-icon>
+      </button>
+    </ion-buttons>
+  <ion-navbar>
+    <ion-title><i>EXPENSES</i></ion-title>
+     <!-- <ion-buttons end>
+            <button (click)="my_func()" ion-button icon-only>
+              <ion-icon name="add-circle"></ion-icon>
+            </button>
+          </ion-buttons> -->
+  </ion-navbar>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding class="masters">
+  <ion-menu [content]="content">
+  <ion-content>
+    <h2><ion-icon name="grid">Menu</ion-icon></h2>
+    <button ion-button block (click)="today()"><i>Today</i></button>
+    <button ion-button block (click)="expreport()"><i>Expense Reports</i></button>
+    <button ion-button block (click)="expcategory()"><i>Expense Categories</i></button>
+    <button ion-button block (click)="settings()"><i>Settings</i></button>
+    <button ion-button block (click)="log_out()"><i>Log Out</i></button>
+  </ion-content>
+</ion-menu>
+<ion-nav #content></ion-nav>
+ <!-- <ion-menu type="overlay" [content]="mycontent" sidee="right">...</ion-menu> -->
+  <!-- <ion-menu [content]="mycontent">
+    <ion-content>
+      <ion-list>
+        <p>some menu content, could be list items</p>
+      </ion-list>
+    </ion-content>
+  </ion-menu>
+  <ion-nav #mycontent [root]="rootPage"></ion-nav> -->
+  <h1><i>Amount</i></h1>
+ <ion-list>
+   <ion-item>
+     <ion-label floating><i><strong>Amount</strong></i></ion-label>
+     <ion-input [(ngModel)]="amount" type="number" value=""></ion-input>
+   </ion-item>
+ </ion-list>
+
+
+ <h1><i>Description</i></h1>
+ <ion-list>
+   <ion-item>
+     <ion-label floating><i>Description</i></ion-label>
+     <ion-input [(ngModel)]="description" type="text" value=""></ion-input>
+   </ion-item>
+ </ion-list>
+
+
+ <h1><i>Date</i></h1>
+ <ion-list>
+   <ion-item>
+     <ion-label floating><i></i></ion-label>
+     <ion-input [(ngModel)]="date" type="Date" value=""></ion-input>
+   </ion-item>
+ </ion-list>
+ <br>
+ <br>
+
+<ion-list>
+ <ion-item>
+   <ion-label><i>General</i></ion-label>
+   <ion-select [(ngModel)]="category">
+     <ion-option value="entertainment">Entertainment</ion-option>
+     <ion-option value="food">Food</ion-option>
+     <ion-option value="travel">Travel</ion-option>
+     <ion-option value="clothes">Clothes</ion-option>
+     <ion-option value="kids">Kids</ion-option>
+     <ion-option value="education">Education</ion-option>
+     <ion-option value="recharge">Recharge</ion-option>
+     <ion-option value="investment">Investment</ion-option>
+     <ion-option value="loan">Loan</ion-option>
+     <ion-option value="interest">Interest</ion-option>
+     <ion-option value="bills">Bills</ion-option>
+     <ion-option value="others">Others</ion-option>
+   </ion-select>
+ </ion-item>
+</ion-list>
+
+ <ion-row>
+   <ion-col>
+    <button ion-button block name="Add" (click)="added()"><i>ADD</i></button>
+   </ion-col>
+
+   <!-- <ion-col>
+    <button ion-button round name="close" (click)="return_back(after_login)"><i>CLOSE</i></button>
+   </ion-col> -->
+ </ion-row>
+
+</ion-content>
